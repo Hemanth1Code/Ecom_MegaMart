@@ -1,0 +1,20 @@
+              <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                  <img src="/images/projectStore/static/images/sportsDress/sweaTWomen.jpeg" width="100" class="card-img-top" alt="...">
+                 <span> 
+                  <span class="shadow" style="font-weight: 500;">{{new.company}}</span>
+                  <span class="card-title" style="font-size: medium; text-overflow: ellipsis; white-space:nowrap; overflow: hidden; display: block;">Women Full Sleeve Color Block Sweatshirt </span>
+                    <span> &#x20B9;1799 <span style="text-decoration: line-through; font-size: small; color:rgb(128, 126, 126);"> &#x20B9;3799 </span><br>
+                    <span style="font-size: x-small; color: orangered; font-weight: bold;">Only Few Left</span><br>
+                    <span>Size XS, S, M, L, XL, XXL, 3XL</span> </span><br>
+                  </span>
+                </div>
+              </div>
+  
+                  <span style="font-size: x-small; color: green; font-weight: bold;">Hot Deal</span><br>
+                 <span style="font-size: x-small; color: green; font-weight: bold;">45% off</span><br>
+
+                  <span style="font-size: x-small; color: orangered; font-weight: bold;">Only Few Left</span><br>
+                 <span style="font-size: x-small; color: ; font-weight: bold;">Free Delivery</span><br>
+
+          

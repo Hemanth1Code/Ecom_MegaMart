@@ -1,0 +1,52 @@
+
+
+@media screen and  (max-width:768px){
+
+    .signUpContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .signUpContainer form{
+        padding: 4vw;
+    }
+    .signup{
+        width: 100%;
+        border-radius: 4vw;
+    }
+}
+
+@media screen and  (min-width:768px){
+    .signUpContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .signUpContainer form{
+        width: 35vw;
+        padding: 4vw;
+    }
+    .signup{
+        width: 100%;
+        border-radius: 4vw;
+    }
+    .signUpContainer form h5{
+      margin-bottom: 10vh;
+    }
+
+}
+
+@media screen and  (min-width:992px){
+   
+    .signUpContainer form{
+        width: 45vw;
+        padding: 4vw;
+    }
+    .signup{
+        width: 100%;
+        border-radius: 4vw;
+    }
+
+}

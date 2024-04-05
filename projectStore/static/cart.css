@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.cartContainer{
+    display: flex;
+}
+
+
+.mainCart{
+    padding: 5px;
+    width: 100vw !important;
+}
+
+
+
+
+@media screen and (max-width:425px) {
+    .cart-card{
+        width: 100vw;
+    }
+    .card1 {
+        width: 100%;
+
+    }
+    table td{
+        font-size: small;
+    }
+}
+@media screen and (min-width:768px) {
+    .cart-card{
+        margin: 1vw !important;
+        max-width: 65vw;
+    }
+    
+}

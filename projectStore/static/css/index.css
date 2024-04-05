@@ -1,0 +1,394 @@
+body{
+    scroll-behavior: smooth;
+}
+
+*{
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+}
+.navbar-nav li a{
+    color: whitesmoke;
+    font-weight:600;
+
+}
+ .navbar-nav li a:hover{
+  color:yellowgreen;
+}
+.nav-item i:hover{
+    color:yellowgreen;
+}
+
+.nav-item i{
+    font-size: 3vh;
+    margin-left: 1vw;
+    color: white;
+}
+.nav{
+    color: white;
+}
+.nav :hover{
+  color:orange;
+}
+
+.shoeCard1{
+  cursor: pointer;
+  text-align: center;
+  margin: 1vw;
+  border-bottom: 0.5px solid  lightgray;
+}
+.colorsCard{
+  cursor: pointer;
+}
+marquee{
+  font-weight: bold;
+  width: 100vw;
+}
+.home-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn-group .btn{
+    margin: 0.2vw;
+}
+.colorsCard{
+    justify-content: center;
+}
+.imgBg{
+    margin: 6px;
+}
+
+
+@media (orientation:portrait){
+    .h2{
+        font-size: 6vh;
+    }
+    .shoeCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .colorsCard{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .shoeCard .mainShoe{
+
+        height: 30vh;
+
+    }
+    .infoCards{
+        text-align: center;
+    }
+    .infoCard img{
+        height: 50vh;
+        margin: 1vw;
+    }
+
+    .thirdPage{
+        background-color: black;
+        background-size: cover;
+        display: flex;
+        justify-content: end;     
+        flex-wrap: wrap;
+        width: 100vw;
+        background-image: linear-gradient(to top, red, black);
+
+    }
+    .pageScroll{
+        display: grid;
+        grid-auto-flow: column;
+        overflow-x: auto;
+        column-gap: 0.3vw;
+        
+    }
+    .pageScroll::-webkit-scrollbar{
+        display: none;
+    
+    }
+
+    .fourthPageLarge{
+        background-color: black;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        justify-content: space-between;
+        background-image: linear-gradient(to bottom, rgb(237, 207, 152), black);
+    }  
+    .shopNowBtn{
+        background-color: white;
+        color: black;
+    }
+
+
+}
+@media (min-width:768px) and (max-width:768px) {
+
+      .h2{
+        font-size: 6vh !important;
+    }
+    .shoeCard{
+        display: flex;
+        justify-content: center;
+    }
+    .shoeCard .mainShoe{
+
+        height: 42vh !important;
+
+    }
+    
+        .imgBg{
+            margin: 1vw;
+            border-radius: 8px;
+    
+        }        
+
+    .infoCard img{
+        height: 45vh;
+    }
+}
+@media   (min-width: 640px) and (max-width:640px){
+       
+        .shoeCard{
+            display: flex !important;
+            flex-direction: row;
+
+            justify-content: center;
+        }
+        .shoeCard .mainShoe{
+            height: 62vh;
+    
+        }
+        .colorsCard{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap !important;
+        }
+        .buttonContainer{
+            display: flex;
+            justify-content: space-around !important;
+        }
+        .home-card .mainShoe{
+            height: 50vh !important;
+        }
+  }
+@media (orientation:landscape) {
+    
+     .h2{
+        font-size: 6vh;
+    }
+    .shoeCard{
+        display: flex;
+        justify-content: center;
+    }
+    .shoeCard .mainShoe{
+
+        height: 62vh;
+
+    }
+    .imgBg{
+        margin: 6px;
+        border-radius: 8px;
+    }
+
+    
+    .buttonContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .secondPage{
+        justify-content: center;
+        text-align: center;
+    }
+    .infoCards{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .infoCard{
+        flex-grow: 1;
+    }
+    .imgBg{
+        margin: 1vw;
+
+    }
+    .infoCard img{
+        width: 30vw;
+
+    }
+    .thirdPage{
+        background-color: black;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-image: linear-gradient(to right, red, black);
+
+    }
+    .fourthPageLarge{
+        background-color: black;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-image: linear-gradient(to left, rgb(237, 207, 152), black);
+    }  
+
+    .pageScroll{
+       display: grid;
+       grid-auto-flow: column;
+       overflow-x: auto;
+       column-gap: 1vw;
+        
+    }
+    .pageScroll::-webkit-scrollbar{
+        display: none;
+    
+    }
+   
+
+   
+    
+}
+
+@media (min-width:800px) {
+    .h2{
+        font-size: 6vh !important;
+    }
+    .shoeCard .mainShoe{
+        height: 20vh !important;
+    }
+    .infoCards{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .infoCard{
+        flex-grow: 1;
+    }
+    .imgBg{
+        margin: 1vw;
+
+    }
+    .infoCard img{
+        width: 30vw;
+
+    }
+   
+}
+
+@media (min-width:992px) {
+     .h2{
+        font-size: 8vh !important;
+    }
+    .shoeCard .mainShoe{
+        height: 50vh !important;
+    }
+    .infoCards{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .infoCard{
+        flex-grow: 1;
+    }
+    .imgBg{
+        margin: 1vw;
+
+    }
+    .infoCard img{
+        width: 30vw;
+
+    }
+}
+
+@media (min-width:992px) {
+    .h2{
+        font-size: 8vh !important;
+    }
+    .shoeCard .mainShoe{
+        height: 50vh !important;
+    }
+    .infoCards{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .infoCard{
+        flex-grow: 1;
+    }
+    .imgBg{
+        margin: 1vw;
+
+    }
+    .infoCard img{
+        width: 30vw;
+
+    }
+
+    
+}
+
+@media (min-width:1024px) {
+    .h2{
+        font-size: 8vh !important;
+    }
+    .shoeCard .mainShoe{
+        height: 40vh !important;
+    }
+    .infoCards{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .infoCard{
+        flex-grow: 1;
+    }
+    .imgBg{
+        margin: 1vw;
+
+    }
+    .infoCard img{
+        width: 30vw;
+        height: 60vh !important;
+
+
+    }
+
+   
+    
+}
+
+
+@media (min-width:1440px) {
+    .h2{
+        font-size: 12vh !important;
+    }
+    .shoeCard .mainShoe{
+        height: 70vh !important;
+    }
+    .infoCards{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .infoCard{
+        flex-grow: 1;
+    }
+    .imgBg{
+        margin: 1vw;
+
+    }
+    .infoCard img{
+        width: 30vw;
+        height: 90vh !important;
+    }
+
+    .infoCard button{
+        width: 50%;
+    }
+    
+}

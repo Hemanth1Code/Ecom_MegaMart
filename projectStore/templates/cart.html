@@ -1,0 +1,127 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MEGAMART</title>
+    <script src="https://kit.fontawesome.com/d87b21cf08.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <link rel="stylesheet" href="static/cart.css">
+  </head>
+  <style>
+   
+    *{
+          scroll-behavior: smooth;
+      }
+      .navbar-nav li a{
+          color: whitesmoke;
+          font-weight:600;
+      }
+      .nav-item i{
+          font-size: 3vh;
+          margin-left: 1vw;
+          color: white;
+      }
+      .nav{
+          color: white;
+      }
+     
+      
+     
+  </style>
+<body>
+  {% include "navbar.html" %}
+<div class="cartContainer d-flex justify-content-center">
+ <div class="row">
+  <div class="col-md-12">
+   <h3 class="text-center" style="text-decoration: underline; text-decoration-color: aquamarine;">CART</h3>
+  
+   <div class="cart-card card1 shadow p-1">
+  <a href="/">  <button class="btn btn-outline-success" style="float: left;">&#8592; Continue Shooping </button></a>
+
+    <table class="table">
+      <tr>
+        <th>Items :   </th>
+        <th>Total :  </th>
+        <th>
+         <a href="checkout"> <button class="btn btn-outline-dark" style="float: right;">&#8594; Checkout </button></a>
+        </th>
+        </th>
+      </tr>
+      </table>
+   </div>
+    <div class="cart-card shadow p-1">
+      <table class="table">
+        <tr>
+          <th></th>
+          <th>Item   </th>
+          <th>Price   </th>
+          <th>Quantity  </th>
+          <th>Total  </th>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <img src="/images/projectStore/static/images/aaaclark.jpeg" width="100" alt="" srcset="">
+          </td>
+          <td>
+            Clarks Shoe
+          </td>
+          <td>
+            &#x20B9;2999
+          </td>
+          <td><span>&#8722;</span> 1 <span>&#43;</span></td>
+          <td>&#x20B9;2999</td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="/images/projectStore/static/images/addsgamb.jpeg" width="100" alt="" srcset="">
+          </td>
+          <td>
+            Clarks Shoe
+          </td>
+          <td>
+            &#x20B9;2999
+          </td>
+          <td>1</td>
+          <td>&#x20B9;2999</td>
+        </tr>
+        
+        <tr>
+          <td>
+            <img src="/images/projectStore/static/images/bata4.jpeg" width="100" alt="" srcset="">
+          </td>
+          <td>
+            Clarks Shoe
+          </td>
+          <td>
+            &#x20B9;2999
+          </td>
+          <td>1</td>
+          <td>&#x20B9;2999</td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="/images/projectStore/static/images/nikeAirMax.png" width="100" alt="" srcset="">
+          </td>
+          <td>
+            Clarks Shoe
+          </td>
+          <td>
+            &#x20B9;2999
+          </td>
+          <td>1</td>
+          <td>&#x20B9;2999</td>
+        </tr>
+       </table>
+    </div>
+   
+  </div>
+ </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MEGAMART/Signup</title>
+    <script src="https://kit.fontawesome.com/d87b21cf08.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/signUp.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  </head>
+  <style>
+    .logoBackground{
+      margin:0.5vw;
+    }
+</style>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="https://ik.imagekit.io/oeyoakvay/megLogo.png?updatedAt=1711365122078" width="70" alt="logo"/> 
+        </a>
+        <div class="d-flex">
+          <p class="m-1" style="font-weight: bold; color: darkgray;"> Already have an account</p>
+            <a href="loginn">  <button class="btn btn-primary"   type="submit">LOGIN</button></a>
+        </div>
+      </div>
+    </nav>
+
+
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="signUpContainer mt-1 ">
+     {% for msg in messages  %}
+     <h5 style="font-size:small; color:orangered;">{{msg}}</h5>
+     {% endfor %}
+      <form action="{% url 'register' %}" method="post" class="border shadow">
+        {% csrf_token %}
+      <h5>Let's get you started</h5>
+        
+          <input type="text" name="username" placeholder="Enter Username"  style="width: 100%;"> <br> 
+          <input type="email" name="useremail" placeholder="Enter Email" class="mt-1"  style="width: 100%;"> <br> 
+          <input type="password" name="password1" placeholder="Enter Password" class="mt-1"  style="width: 100%;" > <br> 
+          <input type="password" name="password2" placeholder="Re-Enter Password" class="mt-1"  style="width: 100%;" > <br> 
+          <button type="submit" class="btn btn-success mt-1" style="width: 100%;">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-6 d d-md-block mt-1 ">
+    <div class="p-2 justify-content-center">
+    <h6>Over Top <span style="color: rgb(71, 71, 232);"> 21+ companies </span> Shoes are available ...Order Now.</h6>
+    <p>SOFT. <span style="color: cornflowerblue; font-weight: 900;">CUSHIONED.</span> BREATHABLE. <i class="fa-solid fa-shoe-prints"></i></p>
+   <div class="d-flex flex-wrap">
+    <p class="m-1">NIKE
+    <span style="color: gold;"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+    <span> | </span>
+  </p> 
+    
+  <p class="m-1">ADIDAS
+    <span style="color: gold;"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+    <span> | </span>
+  </p>
+
+  <p class="m-1">PUMA
+    <span style="color: gold;"> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+  </p>
+
+  <span class="m-1" style="color: darkkhaki;">More...</span>
+</div>
+
+
+  <!-- <img src="https://i.pinimg.com/564x/20/f2/63/20f2631acee823937db0642242c47719.jpg" alt="" width="500" srcset="">-->
+ <hr style="width: 40vw; color:gray; "> 
+ <div class="logoContainer p-2">
+
+    <div class="logoBackground" style="background-color: orange; border-radius: 50%; ">
+      <img src="{% static 'logos/nikLogo.png' %}" height="100" width="100" alt="">
+    </div>
+   
+    <div class="logoBackground" style="background-color: rosybrown; border-radius: 50%; ">
+      <img src="{% static 'logos/Fila.png' %}" height="100" width="100" alt="">
+    </div>
+    <div class="logoBackground" style="background-color: lightseagreen; border-radius: 50%; ">
+      <img src="{% static 'logos/bataLogo.png' %}" height="100" width="100" alt="">
+    </div>
+
+    <div class="logoBackground" style="background-color: burlywood; border-radius: 50%; ">
+      <img src="{% static 'logos/Reebok-logo.png' %}" height="70" width="70" alt="" class="m-3">
+    </div>
+    <div class="logoBackground" style="background-color: lightblue; border-radius: 50%; ">
+      <img src="{% static 'logos/sorel.png' %}" height="100" width="100" alt="">
+    </div>
+
+    <div class="logoBackground" style="background-color: yellow; border-radius: 50%; ">
+      <img src="{% static 'logos/adidaslogo.png' %}" height="70" width="70" class="m-3" alt="">
+    </div>
+
+    <div class="logoBackground" style="background-color: lightcyan; border-radius: 50%; ">
+      <img src="{% static 'logos/converse-shoes-logo.png' %}" height="90" width="90" alt="" class="m-1">
+    </div>
+
+    <div class="logoBackground" style="background-color: rgb(241, 136, 136); border-radius: 50%; ">
+      <img src="{% static 'logos/pumaLogo.png' %}" height="70" width="70" alt="" class="m-3">
+    </div>
+
+    <div class="logoBackground" style="background-color: cornsilk; border-radius: 50%; ">
+      <img src="{% static 'logos/levis.png' %}" height="100" width="100" alt="">
+    </div>
+
+    <div class="logoBackground" style="background-color: rgb(159, 225, 229); border-radius: 50%; ">
+      <img src="{% static 'logos/newB.png' %}" height="100" width="90" alt="" class="m-1">
+    </div>
+
+    <div class="logoBackground" style="background-color: rgb(222, 129, 171); border-radius: 50%; ">
+      <img src="{% static 'logos/allenEdmonds.png' %}" height="100" width="100" alt="">
+    </div>
+
+    <div class="logoBackground" style="background-color: rgb(207, 146, 250); border-radius: 50%; ">
+      <img src="{% static 'logos/locoste.png' %}" height="100" width="100" alt="">
+    </div>
+
+   <div class="logoBackground" style="background-color: rgb(231, 243, 156); border-radius: 50%; ">
+      <img src="{% static 'logos/birkenstock.png' %}" height="100" width="90" alt="">
+    </div>
+
+    <div class="logoBackground" style="background-color: rgb(249, 131, 85); border-radius: 50%; ">
+      <img src="{% static 'logos/black-decker.png' %}" height="100" width="100" alt="">
+    </div>
+
+    <div class="logoBackground" style="background-color: rgb(176, 155, 239); border-radius: 50%; ">
+      <img src="{% static 'logos/clarks-logo.png' %}" height="100" width="100" alt="">
+    </div>
+
+    <div class="logoBackground" style="background-color: rgb(135, 99, 136); border-radius: 50%; ">
+      <img src="{% static 'logos/asics.png' %}" height="95" width="94" alt="">
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>

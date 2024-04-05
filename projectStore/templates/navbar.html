@@ -1,0 +1,142 @@
+<!--Small Devices-->
+{% load static %}
+
+<style>
+       
+  *{
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    nav{
+      width:100vw;
+    }
+}
+</style>
+<body>
+  <div class="d-block d-md-none bg-dark" >
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://ik.imagekit.io/oeyoakvay/megLogo.png?updatedAt=1711365122078" width="70" alt="logo"/> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MEGAMART</h5>
+        <button type="button" class="btn-close btn-close-white "  data-bs-dismiss="offcanvas" aria-label="Close">
+          </button>
+
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" >
+                <a class="nav-link active" aria-current="page" href="/"  style="color:white;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="new">New</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="women">Women</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="men">Men</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kids">Kids</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="motorsport">MotorSport</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sportt">Sport</a>
+          </li>
+              <li class="nav-item mt-1 ">
+               <a href="sign" href="cart" style="color: white; text-decoration: none;"><h5>Account</h5></a>  
+            </li>
+            <li class="nav-item mt-1">
+              <a href="cart" style="color: white;"> <button class="btn " style="border: 1px solid white; " type="button">
+                <span>
+                  <i class="fa-solid fa-bag-shopping" style="color: white;"></i>
+                  <sup> 
+                    <span id="quantityOfCart" style="color: white;">0</span>
+                  </sup>
+                </span>
+              </button>
+            </a>
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+  <div class="d-none d-md-block">
+    <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="https://ik.imagekit.io/oeyoakvay/megLogo.png?updatedAt=1711365122078" width="70" alt="logo"/> 
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item" >
+                        <a class="nav-link active" aria-current="page" href="/"  style="color:white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new">New</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="women">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="men">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kids">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="motorsport">MotorSport</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="sportt">Sport</a>
+                  </li>
+                    </ul>
+                    <ul class="nav justify-content-end">
+                      <li class="nav-item  mr-1">
+                       <a href="sign" href="cart" style="color: white; text-decoration: none;"><h5>Account</h5></a>  
+                       
+                          </ul>
+                        </div>
+                      </li>
+                      <li class=" ml-1">
+                       <a href="cart" style="color: white;"> <button class="btn " style="border: 1px solid white; margin-left: 1vw; " type="button">
+                          <span>
+                            <i class="fa-solid fa-bag-shopping" style="color: white;"></i>
+                            <sup> 
+                              <span id="quantityOfCart" style="color: white;">0</span>
+                            </sup>
+                          </span>
+                        </button>
+                      </a>
+                      </li>
+                    
+                      <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+       
+
+
+          </body>
+
+<!--Large Devices-->
+
